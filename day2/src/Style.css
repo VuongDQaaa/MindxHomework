@@ -1,13 +1,63 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
+
+.to-do-list{
+
+}
+
+.wraper{
+  width: 500px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.wraper .input-data input{
+  height: 100%;
+  width: 80%;
+  border: none;
+  font-size:  17px;
+  border-bottom: 2px solid silver;
+}
+
+.wraper .input-data button{
+  background-color: #373aec; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-list {
+  background-color: #fff;
+}
+
+.job-list li{
+  font-size: 20px;
+  list-style: none;
+}
+
+.notification{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+

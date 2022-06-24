@@ -1,8 +1,11 @@
 import { ToDoList } from "./Components/ToDoList";
+import { Heading } from "./Components/Heading";
+
 function App() {
   return (
     <div className="App">
-      <ToDoList/>
+      <Heading/>
+      <ToDoList />
     </div>
   );
 }
