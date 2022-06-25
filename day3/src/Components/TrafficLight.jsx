@@ -4,10 +4,22 @@ import { useState } from "react";
 
 export const TrafficLight = () => {
   const colors = ["red", "yellow", "green"];
-  const [light, setLight] = useState("red");
+  const [light, setLight] = useState(colors[0]);
 
   const handleLight = () => {
-    setLight(colors);
+    if(light === colors[0])
+    {
+      setLight(colors[1]);
+    }
+    else if(light === colors[1])
+    {
+      setLight(colors[2]);
+    }
+    else if(light === colors[2])
+    {
+      setLight(colors[0]);
+    }
+    console.log(light);
   };
 
   return (
@@ -17,7 +29,7 @@ export const TrafficLight = () => {
       </div>
       <div className="app">
         {colors.map((color) => {
-          return <Light color={color} light={light} setLight ={setLight}/>;
+          return <Light color={color} light={light} setLight={setLight} />;
         })}
       </div>
     </div>
